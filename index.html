@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pakar Kerusakan Smartphone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sistem Pakar Diagnosis Kerusakan Software Smartphone</h1>
+            <p>Metode Certainty Factor (CF)</p>
+        </header>
+
+        <main>
+            <form id="formDiagnosis">
+                <h2>Pilih Gejala yang Dialami:</h2>
+                <div id="daftarGejala">
+                    <!-- Gejala akan dimasukkan lewat JavaScript agar rapi -->
+                </div>
+                
+                <button type="button" onclick="prosesDiagnosis()" class="btn-diagnosa">Diagnosis Sekarang</button>
+            </form>
+
+            <div id="hasilDiagnosis" class="hidden">
+                <h2>Hasil Diagnosis:</h2>
+                <div id="kontenHasil"></div>
+                <button type="button" onclick="resetForm()" class="btn-reset">Diagnosis Ulang</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

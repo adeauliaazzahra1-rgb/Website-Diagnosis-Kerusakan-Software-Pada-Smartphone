@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.gejala-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.gejala-info {
+    flex: 1;
+}
+
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-diagnosa, .btn-reset {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-diagnosa:hover { background-color: #2980b9; }
+.btn-reset { background-color: #e74c3c; }
+.btn-reset:hover { background-color: #c0392b; }
+
+.hidden { display: none; }
+
+.hasil-card {
+    background: #e8f8f5;
+    border-left: 5px solid #2ecc71;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.hasil-card h3 { margin: 0 0 10px 0; color: #27ae60; }
+.solusi { font-style: italic; color: #555; }
